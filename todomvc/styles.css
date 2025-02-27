@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container */
+#app {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    font-size: 24px;
+    color: #ff4b8b;
+    margin-bottom: 10px;
+}
+
+/* Input Field */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #ff7096;
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+button {
+    background: #ff8800;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #e67600;
+}
+
+/* Todo List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    background: #ffbedb;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    background: #ff85a2;
+}
+
+/* Delete Button */
+.deleteTodo {
+    background: #ff4444;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    font-size: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.deleteTodo:hover {
+    background: #cc0000;
+}
+
