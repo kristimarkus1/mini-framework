@@ -1,13 +1,14 @@
 class Router {
     constructor(routes) {
         this.routes = routes;
-        window.addEventListener("hashchange", () => this.loadRoute());
-        this.loadRoute();
+        window.addEventListener("hashchange", this.handleRouteChange.bind(this));
+        this.handleRouteChange();
     }
 
-    loadRoute() {
-        const path = window.location.hash.replace("#", "") || "/";
-        const view = this.routes[path] || this.routes["/404"];
+    handleRouteChange() {
+        const path = window.location.hash.slice(1) || "/";
+        const view = this.routes[path] || this.routes["/"];
         document.getElementById("app").innerHTML = view();
     }
 }
+

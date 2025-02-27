@@ -5,12 +5,10 @@ class MyFramework {
         this.events = {};
     }
 
-    // Create a Virtual DOM element
     createElement(tag, attrs = {}, children = []) {
         return { tag, attrs, children };
     }
 
-    // Render the Virtual DOM into actual DOM
     render(vdom, parent = this.root) {
         parent.innerHTML = "";
         const mount = (node, parentNode) => {
@@ -30,3 +28,4 @@ class MyFramework {
         mount(vdom, parent);
     }
 }
+

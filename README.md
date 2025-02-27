@@ -10,6 +10,8 @@ This project is a **custom JavaScript framework** designed to handle:
 
 It follows the principles of modern JavaScript frameworks and allows users to build dynamic applications efficiently.
 
+This project was inspired by and utilizes concepts from **[TodoMVC](https://todomvc.com/)**.
+
 ---
 
 ## 🚀 Features
@@ -123,4 +125,5 @@ This mini-framework is designed for **learning & experimentation** with JavaScri
 ---
 
 💖 **Happy Coding!** 😃
+
 

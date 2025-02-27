@@ -10,10 +10,11 @@ class StateManager {
 
     setState(newState) {
         this.state = { ...this.state, ...newState };
-        this.listeners.forEach(callback => callback(this.state));
+        this.listeners.forEach(listener => listener(this.state));
     }
 
-    subscribe(callback) {
-        this.listeners.push(callback);
+    subscribe(listener) {
+        this.listeners.push(listener);
     }
 }
+
